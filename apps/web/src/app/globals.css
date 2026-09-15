@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root { --background: #f5f7f3; --foreground: #203126; }
+:root { --background: #121117; --foreground: #f1edf7; }
 
 @theme inline {
   --color-background: var(--background);
@@ -13,3 +13,32 @@
 html { background: var(--background); }
 body { background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
 button { cursor: pointer; }
+
+/* MANAI's dark violet dashboard theme */
+main[class~="bg-[#f5f7f3]"] { background-color: #121117 !important; }
+main [class~="bg-[#f9faf7]"] { background-color: #191720 !important; }
+main [class~="bg-white"] { background-color: #201d28 !important; }
+main [class~="bg-[#193524]"] { background-color: #241731 !important; }
+main [class~="bg-[#1d422b]"] { background-color: #42246c !important; }
+main [class~="bg-[#2a4a33]"] { background-color: #322044 !important; }
+main [class~="bg-[#f6f8f4]"],
+main [class~="bg-[#f7f9f5]"],
+main [class~="bg-[#f2f6ef]"],
+main [class~="bg-[#edf1eb]"] { background-color: #292334 !important; }
+main [class~="bg-[#fffdf9]"] { background-color: #27202f !important; }
+main [class~="bg-[#edf6e9]"] { background-color: #302645 !important; }
+main [class~="bg-[#d9f061]"] { background-color: #c7a6ff !important; }
+main [class~="bg-[#74a85b]"] { background-color: #9a6ce4 !important; }
+main [class~="bg-[#d9e7d3]"] { background-color: #4b3c60 !important; }
+main [class~="bg-[#b7d85f]"] { background-color: #c39aff !important; }
+main [class~="border-[#e3e8e1]"],
+main [class~="border-[#e7ebe4]"],
+main [class~="border-[#e4e8e2]"],
+main [class~="border-[#e1e6df]"] { border-color: #382e48 !important; }
+main [class*="text-[#"] { color: #e9e2f0 !important; }
+main [class~="text-[#d9f061]"] { color: #d6bdff !important; }
+main [class~="text-[#315f3d]"],
+main [class~="text-[#3e7248]"],
+main [class~="text-[#48744f]"] { color: #c7a6ff !important; }
+main [class~="hover:bg-[#153720]"]:hover { background-color: #331c56 !important; }
+main [class~="hover:bg-[#e4f77e]"]:hover { background-color: #dac6ff !important; }
