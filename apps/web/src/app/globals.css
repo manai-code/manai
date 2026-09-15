@@ -42,3 +42,26 @@ main [class~="text-[#3e7248]"],
 main [class~="text-[#48744f]"] { color: #c7a6ff !important; }
 main [class~="hover:bg-[#153720]"]:hover { background-color: #331c56 !important; }
 main [class~="hover:bg-[#e4f77e]"]:hover { background-color: #dac6ff !important; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(199, 166, 255, 0.1); }
+  50% { box-shadow: 0 0 0 6px rgba(199, 166, 255, 0.22); }
+}
+
+.animate-fade-up { animation: fade-up 560ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.animate-float { animation: float 4.8s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}
